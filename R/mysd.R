@@ -11,7 +11,7 @@
 #' @examples
 #' mysd(c(1, 2, 3, 4, 5))
 mysd <- function(x, na.rm = TRUE) {
-  if (na.rm)m{
+  if (na.rm){
     x <- x[!is.na(x)]
   }
   sqrt(var(x))
