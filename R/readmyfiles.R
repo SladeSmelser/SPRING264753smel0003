@@ -31,7 +31,6 @@ readmyfiles <- function(
   # 1. DEFINE SUPPORTED FILE EXTENSIONS THAT R CAN READ
   ###########################################################################
   # These are common formats that R can read via base or imported packages.
-  utils::globalVariables(c("filename", "size_kb", "kb", "object"))
   readable_ext <- c(
     "txt", "csv", "tsv", "dat", "fwf",
     "json", "xml", "yaml", "yml",
