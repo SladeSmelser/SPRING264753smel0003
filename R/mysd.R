@@ -10,7 +10,6 @@
 #'
 #' @examples
 #' mysd(c(1, 2, 3, 4, 5))
-utils::globalVariables(c("filename", "size_kb", "kb", "object"))
 mysd <- function(x, na.rm = TRUE) {
   if (na.rm){
     x <- x[!is.na(x)]
