@@ -9,11 +9,15 @@
 #' @param include_subdirs Logical. If TRUE, also search subdirectories.
 #' @param make_plots Logical. If TRUE, generate plots of file sizes and memory usage.
 #'
+#' @importFrom utils read.csv read.table read.delim object.size
+#' @importFrom stats reorder
+#' @importFrom grDevices dev.new
+#'
 #' @returns A named list of R objects successfully read from files.
 #' @export
 #'
 #' @examples
-#' #' \dontrun{
+#' \dontrun{
 #' files <- readmyfiles(path = "data", max_kb = 1000)
 #' names(files)
 #' }
@@ -27,6 +31,7 @@ readmyfiles <- function(
   # 1. DEFINE SUPPORTED FILE EXTENSIONS THAT R CAN READ
   ###########################################################################
   # These are common formats that R can read via base or imported packages.
+  utils::globalVariables(c("filename", "size_kb", "kb", "object"))
   readable_ext <- c(
     "txt", "csv", "tsv", "dat", "fwf",
     "json", "xml", "yaml", "yml",

@@ -16,3 +16,20 @@ LazyData: true
 RoxygenNote: 7.3.3
 URL: https://github.com/SladeSmelser/SPRING264753smel0003
 BugReports: https://github.com/SladeSmelser/SPRING264753smel0003/issues
+Imports:
+    ggplot2,
+    utils,
+    jsonlite,
+    xml2,
+    yaml,
+    readxl,
+    haven,
+    arrow,
+    fst,
+    rvest,
+    DBI,
+    RSQLite,
+    grDevices,
+    stats,
+    progress
+
