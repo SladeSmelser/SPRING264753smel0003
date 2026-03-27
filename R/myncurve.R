@@ -31,3 +31,4 @@ myncurve = function(mu, sigma, a){
 
   list(mu=mu, sigma=sigma, area=area)
 }
+
